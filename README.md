@@ -4,7 +4,10 @@ Um espaço para organizar **insights** pessoais sobre as Escrituras e aprofundar
 
 ---
 
-## 🌳 Genealogia  
-Ferramenta para criação da genealogia: [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/)  
+## 🖋️ Visualizações com Graphviz  
+Ferramenta utilizada para criar diagramas a partir de códigos: [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/)  
 
-📄 [Código com a genealogia](./genealogia.dot)  
+### Lista de arquivos disponíveis:
+- 🧬 [Genealogia](./genealogia.dot) — Criação da genealogia familiar, mostrando relações de parentesco.  
+- 🔗 [Relações entre Versículos](./relacoes_versiculos.dot) — Mapeamento de conexões e referências entre textos bíblicos.  
+- 📜 [Cronologia](./cronologia.dot) — Representação de eventos e períodos bíblicos ao longo do tempo. (🚧 Em construção)
