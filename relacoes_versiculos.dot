@@ -1,0 +1,3 @@
+digraph TextosRelacionados {
+    "Joel 2:28-32" -> "Atos 2" [label="Profecia do Espírito Santo"]
+}
