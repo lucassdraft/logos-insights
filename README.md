@@ -12,3 +12,6 @@ Ferramenta utilizada para criar diagramas a partir de códigos: [Graphviz Online
 - 🔗 [Relações entre Versículos](./relacoes_versiculos.dot) — Mapeamento de conexões e referências entre textos bíblicos.  
 - 🌍 [Locais](./locais.dot) — Representação de localidades bíblicas mencionados nas Escrituras. 
 - 📜 [Cronologia](./cronologia.dot) — Representação de eventos e períodos bíblicos ao longo do tempo. (🚧 Em construção)
+
+## TO DO
+ - Escrever sobre o ano do jubileu.
