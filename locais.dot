@@ -1,3 +1,4 @@
 digraph Locais {
-    Jerusalém -> Monte Sião
+    Jerusalém -> "Monte Sião"
+    "Monte Samaria(Gerizim)" [label="Monte Samaria(Gerizim)" tooltip="Também chamado de Gerizim, localizado em Samaria"]
 }

@@ -10,4 +10,5 @@ Ferramenta utilizada para criar diagramas a partir de códigos: [Graphviz Online
 ### Lista de arquivos disponíveis:
 - 🧬 [Genealogia](./genealogia.dot) — Criação da genealogia familiar, mostrando relações de parentesco.  
 - 🔗 [Relações entre Versículos](./relacoes_versiculos.dot) — Mapeamento de conexões e referências entre textos bíblicos.  
+- 🌍 [Locais](./locais.dot) — Representação de localidades bíblicas mencionados nas Escrituras. 
 - 📜 [Cronologia](./cronologia.dot) — Representação de eventos e períodos bíblicos ao longo do tempo. (🚧 Em construção)
