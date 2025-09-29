@@ -1,3 +1,4 @@
 digraph Genealogia {
     Petuel -> Joel [label="Joel 1:1"]
+    Joás -> Jeroboão [label="Amós 1:1"]
 }
