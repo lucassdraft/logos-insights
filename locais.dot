@@ -1,4 +1,9 @@
 digraph Locais {
     Jerusalém -> "Monte Sião"
-    "Monte Samaria(Gerizim)" [label="Monte Samaria(Gerizim)" tooltip="Também chamado de Gerizim, localizado em Samaria"]
+    Samaria -> Gerizim
+    Gerizim [label="Monte Samaria(Gerizim)" tooltip="Também chamado de Gerizim, localizado em Samaria"]
+    Canaã -> Efraim
+    Canaã -> Betel
+    Betel [label="Betel" tooltip="Uma cidade cananeia situada entre Efraim e Judeia"]
+    Canaã -> Judeia
 }
