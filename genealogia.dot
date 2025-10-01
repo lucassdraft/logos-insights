@@ -1,4 +1,194 @@
 digraph Genealogia {
-    Petuel -> Joel [label="Joel 1:1"]
-    Joás -> Jeroboão [label="Amós 1:1"]
+    // Como encontrar um nó
+    // Entidade  [style=filled, fillcolor=red, fontcolor=white]
+    // Exemplo de como encontrar um nó
+    Jesus  [style=filled, fillcolor=red, fontcolor=white]
+    
+    rankdir=TB
+    node [shape=ellipse]
+
+    // Adão até Noé
+    // Adão e Eva
+    Adão -> AdãoEva
+    Eva -> AdãoEva
+    AdãoEva [label="Casamento", shape=diamond]
+    
+    AdãoEva -> Caim
+    AdãoEva -> Abel
+    AdãoEva -> Sete
+    
+    Sete -> Enos
+    Enos -> Cainã
+    Cainã -> Maalalel
+    Maalalel -> Jarede
+    Jarede -> Enoque
+    Enoque -> Matusalém
+    Matusalém -> Lameque
+    Lameque -> Noé
+
+    // Noé e seus filhos
+    Noé -> NoeEsposa
+    NoeEsposa [label="Casamento", shape=diamond]
+    NoeEsposa -> Sem
+    NoeEsposa -> Cam
+    NoeEsposa -> Jafé
+
+    // Linha messiânica continua por Sem
+    Sem -> Arfaxade
+    Arfaxade -> Selá
+    Selá -> Héber
+    Héber -> Pelegue
+    Pelegue -> Reú
+    Reú -> Serugue
+    Serugue -> Naor
+    Naor -> Terá
+    Terá -> TeraEsposa
+    TeraEsposa [label="Casamento", shape=diamond]
+    TeraEsposa -> Abraão
+    TeraEsposa -> Naor2
+    TeraEsposa -> Harã
+
+    // Abraão e Sara
+    Abraão -> AbraaoSara
+    Sara -> AbraaoSara
+    AbraaoSara [label="Casamento", shape=diamond]
+    AbraaoSara -> Isaque
+
+    // Isaque e Rebeca
+    Isaque -> IsaqueRebeca
+    Rebeca -> IsaqueRebeca
+    IsaqueRebeca [label="Casamento", shape=diamond]
+    IsaqueRebeca -> Esaú
+    IsaqueRebeca -> Jacó
+    
+    // Esaú e suas esposas
+    Esaú -> EsauAda
+    Ada -> EsauAda
+    EsauAda [label="Casamento", shape=diamond]
+    EsauAda -> Elifaz
+    
+    Esaú -> EsauBasemate
+    Basemate -> EsauBasemate
+    EsauBasemate [label="Casamento", shape=diamond]
+    EsauBasemate -> Reuel
+    
+    Esaú -> EsauOolibama
+    Oolibama -> EsauOolibama
+    EsauOolibama [label="Casamento", shape=diamond]
+    EsauOolibama -> Jeús
+    EsauOolibama -> Jalão
+    EsauOolibama -> Corá
+
+    // Jacó e suas esposas
+    Jacó [label="Jacó | Israel"]
+    
+    //Tribos de Israel
+    Rúben [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Simeão [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Judá [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Zebulom [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Issacar [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Dã [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Gade [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Aser [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Naftali [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Benjamim [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    Levi [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    José [style=filled, fillcolor=darksalmon, fontcolor=white, tooltip="Tribo de Israel"]
+    
+    Jacó -> JacoLia
+    Lia -> JacoLia
+    JacoLia [label="Casamento", shape=diamond]
+    JacoLia -> Rúben
+    JacoLia -> Simeão
+    JacoLia -> Levi
+    JacoLia -> Judá
+    JacoLia -> Issacar
+    JacoLia -> Zebulom
+    JacoLia -> Diná
+
+    Jacó -> JacoRaquel
+    Raquel -> JacoRaquel
+    JacoRaquel [label="Casamento", shape=diamond]
+    JacoRaquel -> José
+    JacoRaquel -> Benjamim
+
+    Jacó -> JacoBila
+    Bila -> JacoBila
+    JacoBila [label="Casamento", shape=diamond]
+    JacoBila -> Dã
+    JacoBila -> Naftali
+
+    Jacó -> JacoZilpa
+    Zilpa -> JacoZilpa
+    JacoZilpa [label="Casamento", shape=diamond]
+    JacoZilpa -> Gade
+    JacoZilpa -> Aser
+
+    // Linha messiânica segue por Judá
+    Judá -> JudaTamar
+    Tamar -> JudaTamar
+    JudaTamar [label="Casamento", shape=diamond]
+    JudaTamar -> Perez
+    JudaTamar -> Zerá
+
+    // Perez até Davi
+    Perez -> Esrom
+    Esrom -> Arão
+    Arão -> Aminadabe
+    Aminadabe -> Naassom
+    Naassom -> Salmom
+    Salmom -> SalmomRaabe
+    Raabe -> SalmomRaabe
+    SalmomRaabe [label="Casamento", shape=diamond]
+    SalmomRaabe -> Boaz
+
+    Boaz -> BoazRute
+    Rute -> BoazRute
+    BoazRute [label="Casamento", shape=diamond]
+    BoazRute -> Obede
+
+    Obede -> Jessé
+    Jessé -> Davi
+
+    // Davi e Bate-Seba
+    Davi -> DaviBateSeba
+    "Bate-Seba" -> DaviBateSeba
+    DaviBateSeba [label="Casamento", shape=diamond]
+    DaviBateSeba -> Salomão
+
+    // Salomão até o exílio
+    Salomão -> Roboão
+    Roboão -> Abias
+    Abias -> Asa
+    Asa -> Josafá
+    Josafá -> Jorão
+    Jorão -> Uzias
+    Uzias -> Jotão
+    Jotão -> Acaz
+    Acaz -> Ezequias
+    Ezequias -> Manassés
+    Manassés -> Amom
+    Amom -> Josias
+    Josias -> Jeconias
+
+    // Pós-exílio
+    Jeconias -> Salatiel
+    Salatiel -> Zorobabel
+    Zorobabel -> Abiúde
+    Abiúde -> Eliaquim
+    Eliaquim -> Azor
+    Azor -> Sadoque
+    Sadoque -> Aquim
+    Aquim -> Eliúde
+    Eliúde -> Eleazar
+    Eleazar -> Matã
+    Matã -> Jacó2
+    Jacó2 -> JoséCarpinteiro
+
+    // José e Maria
+    JoséCarpinteiro -> JoseMaria
+    Maria -> JoseMaria
+    JoseMaria [label="Casamento", shape=diamond]
+    JoseMaria -> Jesus
 }
