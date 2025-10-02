@@ -191,4 +191,6 @@ digraph Genealogia {
     Maria -> JoseMaria
     JoseMaria [label="Casamento", shape=diamond]
     JoseMaria -> Jesus
+    
+    Amitai -> Jonas
 }
