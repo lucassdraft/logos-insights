@@ -1,9 +1,109 @@
 digraph Locais {
-    Jerusalém -> "Monte Sião"
-    Samaria -> Gerizim
-    Gerizim [label="Monte Samaria(Gerizim)" tooltip="Também chamado de Gerizim, localizado em Samaria"]
-    Canaã -> Efraim
-    Canaã -> Betel
-    Betel [label="Betel" tooltip="Uma cidade cananeia situada entre Efraim e Judeia"]
-    Canaã -> Judeia
+    rankdir=LR; // Esquerda para direita como linha do tempo
+
+    // Como encontrar um nó
+    // Entidade  [style=filled, fillcolor=red, fontcolor=white]
+    // Exemplo de como encontrar um nó
+    Israel  [style=filled, fillcolor=red, fontcolor=white]
+    
+    // === Patriarcas ===
+    subgraph cluster_patriarcas {
+        label="⛺ Patriarcas (Abraão, Isaque, Jacó)";
+        style=dashed;
+
+        Hebrom [label="Hebrom" tooltip="Abraão habitou aqui e comprou o túmulo da família (Macpela)"];
+        Siquém [label="Siquém" tooltip="Local de Jacó e alianças em Gênesis"];
+        Betel [label="Betel" tooltip="Jacó teve a visão da escada (Gn 28)"];
+    }
+
+    // === Êxodo ===
+    subgraph cluster_exodo {
+        label="🌵 Êxodo e Peregrinação";
+        style=dashed;
+
+        Egito [label="Egito" tooltip="Local de escravidão do povo hebreu"];
+        Sinai [label="Monte Sinai" tooltip="Moisés recebeu a Lei (Êx 19-20)"];
+        Horebe [label="Monte Horebe" tooltip="Sarça ardente (Êx 3)"];
+        Paran [label="Deserto de Parã" tooltip="Acampamento durante peregrinação (Nm 10)"];
+        Moabe [label="Moabe" tooltip="De onde Moisés viu a Terra Prometida (Dt 34)"];
+    }
+
+    // === Conquista ===
+    subgraph cluster_conquista {
+        label="⚔️ Conquista de Canaã (Josué)";
+        style=dashed;
+
+        Jericó [label="Jericó" tooltip="Primeira cidade conquistada (Js 6)"];
+        Gilgal [label="Gilgal" tooltip="Primeiro acampamento em Canaã; renovação da aliança (Js 5)"];
+        Efraim [label="Efraim" tooltip="Tribo israelita no centro de Canaã"];
+    }
+
+    // === Reino de Israel/Judá ===
+    subgraph cluster_reino {
+        label="👑 Reino Unido e Dividido";
+        style=dashed;
+        
+        "Monte Sião" [label="Monte Sião" tooltip="Símbolo da cidade santa e presença de Deus"];
+        "Monte das Oliveiras" [label="Monte das Oliveiras" tooltip="Monte a leste de Jerusalém; lugar profético e do ministério de Jesus"];
+        
+        Gerizim [label="Monte Gerizim" tooltip="Monte da bênção em Deuteronômio, mais tarde templo samaritano"];
+        
+        Belém [label="Belém" tooltip="Cidade de Davi e nascimento de Jesus"];
+        Adulão [label="Caverna de Adulão" tooltip="Refúgio de Davi contra Saul"];
+        Moresete [label="Moresete" tooltip="Cidade natal do profeta Miqueias"];
+        Aczibe [label="Aczibe" tooltip="Cidade mencionada em Miqueias 1:14"];
+        subgraph cluster_reino_norte {
+            label="Reino do Sul";
+            style=dashed;
+    
+            Samaria [label="Samaria" tooltip="Capital do Reino do Norte"];
+        }
+        
+        subgraph cluster_reino_sul {
+            label="Reino do Sul";
+            style=dashed;
+    
+            Judá [label="Judá" tooltip="Reino do Sul, com Jerusalém como capital"];
+            Jerusalém [label="Jerusalém" tooltip="Capital de Davi e Salomão; templo construído aqui"];
+        }
+    }
+
+    // === Exílio ===
+    subgraph cluster_exilio {
+        label="⛓️ Exílio e Cativeiro";
+        style=dashed;
+
+        Babilonia [label="Babilônia" tooltip="Destruiu Jerusalém em 586 a.C. e levou Judá ao exílio"];
+        Ninive [label="Nínive" tooltip="Capital da Assíria; local da pregação de Jonas"];
+    }
+
+    // === Novo Testamento ===
+    subgraph cluster_nt {
+        label="✝️ Novo Testamento";
+        style=dashed;
+
+        Galileia [label="Galileia" tooltip="Região norte de Israel; base do ministério de Jesus"];
+        Nazaré [label="Nazaré" tooltip="Cidade da infância de Jesus"];
+        Cafarnaum [label="Cafarnaum" tooltip="Base do ministério de Jesus junto ao mar da Galileia"];
+        MarDaGalileia [label="Mar da Galileia" tooltip="Jesus acalmou a tempestade e andou sobre as águas aqui"];
+    }
+
+    // === Conexões temporais ===
+    Egito -> Sinai -> Paran -> Moabe -> Jericó -> Gilgal -> Efraim;
+    Hebrom -> Siquém -> Betel -> Jericó;
+    Jerusalém -> "Monte Sião";
+    Jerusalém -> "Monte das Oliveiras";
+    Judá -> Belém;
+    Judá -> Hebrom;
+    Judá -> Moresete;
+    Judá -> Aczibe;
+    Samaria -> Gerizim;
+    Israel -> Adulão;
+    Galileia -> Nazaré;
+    Galileia -> Cafarnaum;
+    Cafarnaum -> MarDaGalileia;
+    Judá -> Babilonia;
+    Israel -> Ninive;
+    
+    Israel -> Samaria;
 }
