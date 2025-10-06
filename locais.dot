@@ -74,6 +74,7 @@ digraph Locais {
         style=dashed;
 
         Babilonia [label="Babilônia" tooltip="Destruiu Jerusalém em 586 a.C. e levou Judá ao exílio"];
+        Assíria -> Ninive
         Ninive [label="Nínive" tooltip="Capital da Assíria; local da pregação de Jonas"];
     }
 
@@ -103,7 +104,6 @@ digraph Locais {
     Galileia -> Cafarnaum;
     Cafarnaum -> MarDaGalileia;
     Judá -> Babilonia;
-    Israel -> Ninive;
     
     Israel -> Samaria;
 }
