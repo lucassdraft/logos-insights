@@ -193,4 +193,9 @@ digraph Genealogia {
     JoseMaria -> Jesus
     
     Amitai -> Jonas
+    
+    Ezequias -> Amarias  [label="Muitos estudiosos entendem que Sofonias era descendente de Ezequias"] 
+    Amarias -> Gedalias
+    Gedalias -> Cusi
+    Cusi -> Safonias
 }
