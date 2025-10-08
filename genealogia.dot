@@ -198,4 +198,6 @@ digraph Genealogia {
     Amarias -> Gedalias
     Gedalias -> Cusi
     Cusi -> Safonias
+    
+    Jozadaque -> Josué
 }
